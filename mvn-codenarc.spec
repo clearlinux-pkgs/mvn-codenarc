@@ -4,7 +4,7 @@
 #
 Name     : mvn-codenarc
 Version  : 0.25.2
-Release  : 1
+Release  : 2
 URL      : https://github.com/CodeNarc/CodeNarc/archive/v0.25.2.tar.gz
 Source0  : https://github.com/CodeNarc/CodeNarc/archive/v0.25.2.tar.gz
 Source1  : https://repo.gradle.org/gradle/libs-releases/org/codenarc/CodeNarc/0.25.2/CodeNarc-0.25.2.jar
