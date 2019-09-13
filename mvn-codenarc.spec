@@ -4,11 +4,13 @@
 #
 Name     : mvn-codenarc
 Version  : 0.25.2
-Release  : 2
+Release  : 3
 URL      : https://github.com/CodeNarc/CodeNarc/archive/v0.25.2.tar.gz
 Source0  : https://github.com/CodeNarc/CodeNarc/archive/v0.25.2.tar.gz
 Source1  : https://repo.gradle.org/gradle/libs-releases/org/codenarc/CodeNarc/0.25.2/CodeNarc-0.25.2.jar
 Source2  : https://repo.gradle.org/gradle/libs-releases/org/codenarc/CodeNarc/0.25.2/CodeNarc-0.25.2.pom
+Source3  : https://repo.gradle.org/gradle/libs-releases/org/codenarc/CodeNarc/1.0/CodeNarc-1.0.jar
+Source4  : https://repo.gradle.org/gradle/libs-releases/org/codenarc/CodeNarc/1.0/CodeNarc-1.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -51,6 +53,12 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/codenarc/CodeNarc/0
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/codenarc/CodeNarc/0.25.2
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/codenarc/CodeNarc/0.25.2/CodeNarc-0.25.2.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/codenarc/CodeNarc/1.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/codenarc/CodeNarc/1.0/CodeNarc-1.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/codenarc/CodeNarc/1.0
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/codenarc/CodeNarc/1.0/CodeNarc-1.0.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -59,6 +67,8 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/codenarc/CodeNarc/0
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/org/codenarc/CodeNarc/0.25.2/CodeNarc-0.25.2.jar
 /usr/share/java/.m2/repository/org/codenarc/CodeNarc/0.25.2/CodeNarc-0.25.2.pom
+/usr/share/java/.m2/repository/org/codenarc/CodeNarc/1.0/CodeNarc-1.0.jar
+/usr/share/java/.m2/repository/org/codenarc/CodeNarc/1.0/CodeNarc-1.0.pom
 
 %files license
 %defattr(0644,root,root,0755)
